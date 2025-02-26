@@ -1,4 +1,4 @@
-package Class51;
+package com.automation.test;
 
 import org.testng.annotations.Test;
 

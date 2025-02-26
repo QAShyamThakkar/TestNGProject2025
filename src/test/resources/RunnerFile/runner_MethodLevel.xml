@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test" verbose="1">
+    <test name="SauceDemoTest">
+
+        <classes>
+            <class name="com.automation.test.LoginTest">
+                <methods>
+                    <include name="verifyLogInIsSuccessful"/>
+                    <include name="verifyLogInIsUnSuccessfulwithBlankCred"/>
+                </methods>
+            </class>
+
+            <class name="com.automation.test.CartTest">
+                <methods>
+                    <exclude name="verifyUProductisRemoved"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>
