@@ -16,13 +16,13 @@ public class ProductDetailsTest {
         System.out.println("Closing chrome");
     }
 
-    @Test
+    @Test (groups = "Smoke", priority = 7)
     public void verifyPriceonProductDetailPage(){
-        System.out.println("Verify Price on Product Detail Page");
+        System.out.println("Test7 - Verify Price on Product Detail Page");
     }
 
-    @Test
+    @Test (priority = 8)
     public void verifyinfoonProductDetailPage(){
-        System.out.println("Verify Info on Product Detail Page");
+        System.out.println("Test8 - Verify Info on Product Detail Page");
     }
 }

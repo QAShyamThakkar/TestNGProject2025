@@ -1,0 +1,42 @@
+1. TestNG - Testing Framework (Refer TestNG documentation)
+
+2. Creating project - (Java - Maven)
+
+3. Manual Test Case
+
+4. Annotations:
+	@Test
+	@BeforeClass
+	@AfterClass
+	@BeforeMethod
+	@AfterMethod
+
+5. Runner File (TestNG documentation)
+
+	1. To run whole package
+	2. To run class
+	3. To run method (include and exclude)
+
+6. Groupings:
+
+       1. We have to mention group at test level [eg @Test(groups = "Smoke")]
+       2. We have to include group tag in runner file [eg - Runner4]
+
+7. Priority and Dependency:
+
+    1. By default, priority is set to 0 for all tests and it will run alphabetically
+    2. under (), we can set priority for all test
+
+8. Parameters
+
+9. Parallel Execution
+
+10. Cloud Execution
+
+11. Reporting
+
+12. Assertions
+
+13. Soft Assertions
+
+14. Data Tables

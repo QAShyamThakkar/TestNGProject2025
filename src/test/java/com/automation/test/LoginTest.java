@@ -14,21 +14,21 @@ public class LoginTest {
  4. Verify the user is on the Homepage
  */
 
-    @Test
+    @Test (groups = "Smoke", priority = 1, dependsOnMethods = "verifyLogInIsUnSuccessfulwithBlankCred")
     //Positive Scenario
     public void verifyLogInIsSuccessful() {
         System.out.println("Test1- Verify Log in Successful");
     }
 
-    @Test
+    @Test(priority = 2)
     //Negative Scenario
     public void verifyLogInIsUnSuccessfulwithWrongCred() {
         System.out.println("Test2- Verify Log in Unsuccessful with Wrong Cred");
     }
 
-    @Test
+    @Test (priority = 3)
     public void verifyLogInIsUnSuccessfulwithBlankCred() {
-        System.out.println("Test2- Verify Log in Unsuccessful with Blank Cred");
+        System.out.println("Test3- Verify Log in Unsuccessful with Blank Cred");
     }
 
 }

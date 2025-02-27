@@ -4,19 +4,19 @@ import org.testng.annotations.Test;
 
 public class CartTest {
 
-    @Test
+    @Test (groups = {"Smoke", "Shyam"}, priority = 4)
     public void verifyProductisAdded() {
-        System.out.println("verify Product is added");
+        System.out.println("Test4 - verify Product is added");
     }
 
-    @Test
+    @Test (priority = 5)
     public void verifyUProductisRemoved() {
-        System.out.println("verify Product is removed");
+        System.out.println("Test5 - verify Product is removed");
     }
 
-    @Test
+    @Test (groups = {"Smoke", "Vold"}, priority = 6)
     public void verifyUserCanSeeOnCartPage() {
-        System.out.println("verify User Can See On Cart Page");
+        System.out.println("Test6 - verify User Can See On Cart Page");
     }
 
 }
