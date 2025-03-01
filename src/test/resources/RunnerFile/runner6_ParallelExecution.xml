@@ -1,11 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Automation Test" verbose="5">
-    <test name="SauceDemoTest">
+<suite name="Automation Test" verbose="1" parallel="tests" thread-count="3">
 
+    <test name="SauceDemoTest">
+        <parameter name="browser" value="safari"></parameter>
         <packages>
+
             <package name="com.automation.test">
+
+
             </package>
+
+
         </packages>
 
     </test>

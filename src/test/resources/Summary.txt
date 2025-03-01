@@ -27,16 +27,18 @@
     1. By default, priority is set to 0 for all tests and it will run alphabetically
     2. under (), we can set priority for all test
 
-8. Parameters
+8. How To use Base test
+
+8. Parameters (3.6 on TestNG documentation)
+    1. Include Parameter tag in Runner File, with Name and Value
+    2. Include Parameter Annotation in Test File, with Name
 
 9. Parallel Execution
 
-10. Cloud Execution
+    1. Include Parallel tag in Runner File with thread count (3.11 on TestNG documentation)
 
-11. Reporting
+10. Reporting
 
-12. Assertions
+11. Assertions and Soft Assertions
 
-13. Soft Assertions
-
-14. Data Tables
+12. Data Tables
