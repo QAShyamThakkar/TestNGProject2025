@@ -37,8 +37,17 @@
 
     1. Include Parallel tag in Runner File with thread count (3.11 on TestNG documentation)
 
-10. Reporting
+10. Reporting -
 
-11. Assertions and Soft Assertions
+        1. Execute test from pom.xml
+        2. Report will be saved in the target folder
 
-12. Data Tables
+11. Assertions and Soft Assertions -
+
+	1. Hard Assertions - Stops execution immediately upon failure
+	2. Soft Assertions - Continues test execution on failure
+
+12. Data Driven Testing
+
+
+---Done:)

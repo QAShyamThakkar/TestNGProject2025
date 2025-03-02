@@ -2,30 +2,29 @@ package com.automation.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 public class BaseTest {
     WebDriver driver;
 
 //    String browser = "safari";
 
-    @Parameters("browser")
-    @BeforeClass
-//    @BeforeMethod
-    public void setUp(String browser) {
+//    @Parameters("browser")
+    @BeforeTest     // - before @Test Tag
+//    @BeforeClass  // - before each class
+//    @BeforeMethod // - before each method
+    public void setUp() {
         driver = new ChromeDriver();
 
-        System.out.println("Opening " + browser);
+        System.out.println("Opening " );
     }
 
-    @Parameters("browser")
-    @AfterClass
+//    @Parameters("browser")
+    @AfterTest
 //    @AfterMethod
-    public void cleanUp(String browser) {
+    public void cleanUp() {
 //        driver.quit();
-        System.out.println("Closing " + browser);
+        System.out.println("Closing " );
     }
 
 
